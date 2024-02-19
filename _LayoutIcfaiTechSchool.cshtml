@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    @Html.Partial("_HeaderIcfaiTechSchool")
+
+    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-G36E84NF8Y"></script>
+    <script>
+        setTimeout(function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-G36E84NF8Y');
+        }, 20000);
+    </script>
+
+
+</head>
+<body>
+    <script type='application/ld+json'>
+        {
+          "&#64;context": "http://www.schema.org",
+          "&#64;type": "EducationalOrganization",
+          "name": "The ICFAI Foundation for Higher Education, Hyderabad",
+          "url": "https://www.ifheindia.org",
+          "logo": "assets/img/ifhe-logo.svg",
+          "image": "assets/img/Academics/inner-images/ifhe-campus-building.jpg",
+          "description": "IFHE is one of the largest multi-disciplinary universities in the country. The Faculty of Management, Faculty of Science and Technology and Faculty of Law are the three main building blocks of the university.",
+          "address": {
+            "&#64;type": "PostalAddress",
+            "streetAddress": " IFHE Campus Donthanapally, Shankarapalli Road Hyderabad - 501203, Telangana, India.",
+            "addressLocality": "Hyderabad ",
+            "addressRegion": "Telangana",
+            "postalCode": "501203",
+            "addressCountry": "India"
+          },
+          "openingHours": "Mo, Tu, We, Th, Fr, Sa 09:00-05:30",
+          "contactPoint": {
+            "&#64;type": "ContactPoint",
+            "telephone": "18005990767, 8498053801 / 9160191166 , 08417-226663 / 08417-226662 "
+          }
+        }
+    </script>
+
+    <main>
+        @RenderBody()
+    </main>
+    @Html.Partial("_FooterIcfaiTechSchool")
+    <script src="~/IcfaiTechassets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/IcfaiTechassets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/IcfaiTechassets/vendor/aos/aos.js"></script>
+
+    <script src="~/IcfaiTechassets/js/main.js"></script>
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
